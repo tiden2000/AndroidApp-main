@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RentalZ</string>
+    <string name="notification_01">Please fill in the form</string>
+    <string name="notification_02">Submit successfully</string>
+    <string name="tv_PropertyName">Property Name</string>
+    <string name="tv_PropertyAddress">Address</string>
+    <string name="tv_PropertyType">Type</string>
+    <string name="tv_PropertyFurniture">Furniture</string>
+    <string name="tv_PropertyBedroom">Bedroom</string>
+    <string name="tv_PropertyPrice">Price</string>
+    <string name="tv_PropertyReporter">Reporter</string>
+    <string name="tv_PropertyNote">Note</string>
+    <string name="tv_PropertyDate">Date</string>
+    <string name="btn_submit">Submit</string>
+</resources>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblPropertyName"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="NAME"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvName" />
+
+    <EditText
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/lblPropertyName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/tvAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvName"
+        app:layout_constraintStart_toEndOf="@+id/lblPropertyName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/lblPropertyAddress"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="ADDRESS"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAddress"
+        app:layout_constraintEnd_toEndOf="@+id/lblPropertyName"
+        app:layout_constraintStart_toStartOf="@+id/lblPropertyName"
+        app:layout_constraintTop_toTopOf="@+id/tvAddress" />
+
+    <TextView
+        android:id="@+id/lblPropertyReporter"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="REPORTER"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvReporter"
+        app:layout_constraintEnd_toStartOf="@+id/tvAddress"
+        app:layout_constraintStart_toStartOf="@+id/lblPropertyAddress"
+        app:layout_constraintTop_toTopOf="@+id/tvReporter" />
+
+    <EditText
+        android:id="@+id/tvReporter"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvAddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvAddress"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
+
+    <EditText
+        android:id="@+id/tvNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvReporter"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblPropertyReporter"
+        app:layout_constraintTop_toBottomOf="@+id/tvReporter" />
+
+    <TextView
+        android:id="@+id/lblPropertyNote"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="NOTE"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNote"
+        app:layout_constraintEnd_toEndOf="@+id/lblPropertyReporter"
+        app:layout_constraintStart_toStartOf="@+id/lblPropertyReporter"
+        app:layout_constraintTop_toTopOf="@+id/tvNote" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Submit"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvNote"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lblPropertyNote"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+
+    <EditText
+        android:id="@+id/tvType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvAddress"
+        app:layout_constraintStart_toStartOf="@+id/tvAddress"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+    <TextView
+        android:id="@+id/lblPropertyType"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="TYPE"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvType"
+        app:layout_constraintEnd_toStartOf="@+id/tvAddress"
+        app:layout_constraintStart_toStartOf="@+id/lblPropertyAddress"
+        app:layout_constraintTop_toTopOf="@+id/tvType" />
+
+    <EditText
+        android:id="@+id/tvFurniture"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvType"
+        app:layout_constraintStart_toStartOf="@+id/tvType"
+        app:layout_constraintTop_toBottomOf="@+id/tvType" />
+
+    <TextView
+        android:id="@+id/lblPropertyFurniture"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="FURNITURE"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvFurniture"
+        app:layout_constraintEnd_toStartOf="@+id/tvType"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/lblPropertyType"
+        app:layout_constraintTop_toTopOf="@+id/tvFurniture" />
+
+    <EditText
+        android:id="@+id/tvBedroom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvFurniture"
+        app:layout_constraintStart_toStartOf="@+id/tvFurniture"
+        app:layout_constraintTop_toBottomOf="@+id/tvFurniture" />
+
+    <TextView
+        android:id="@+id/lblPropertyBedroom"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="BEDROOM"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBedroom"
+        app:layout_constraintEnd_toStartOf="@+id/tvFurniture"
+        app:layout_constraintStart_toStartOf="@+id/lblPropertyFurniture"
+        app:layout_constraintTop_toTopOf="@+id/tvBedroom" />
+
+    <TextView
+        android:id="@+id/lblPropertyPrice"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="PRICE"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPrice"
+        app:layout_constraintEnd_toStartOf="@+id/tvBedroom"
+        app:layout_constraintStart_toStartOf="@+id/lblPropertyBedroom"
+        app:layout_constraintTop_toTopOf="@+id/tvPrice" />
+
+    <EditText
+        android:id="@+id/tvPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvBedroom"
+        app:layout_constraintStart_toStartOf="@+id/tvBedroom"
+        app:layout_constraintTop_toBottomOf="@+id/tvBedroom" />
+
+    <TextView
+        android:id="@+id/lblPropertyDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="DATE"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDate"
+        app:layout_constraintEnd_toEndOf="@+id/lblPropertyNote"
+        app:layout_constraintStart_toStartOf="@+id/lblPropertyNote"
+        app:layout_constraintTop_toTopOf="@+id/tvDate" />
+
+    <EditText
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvNote"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvNote"
+        app:layout_constraintTop_toBottomOf="@+id/tvNote" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvName"
+        app:layout_constraintStart_toStartOf="@+id/lblPropertyName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
